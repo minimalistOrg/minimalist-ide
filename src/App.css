@@ -1,7 +1,10 @@
 :root {
+  --base-03: #002b36;
   --base-02: #073642;
+  --base-00: #657b83;
   --base-2: #eee8d5;
   --base-3: #fdf6e3;
+  --base-1: #93a1a1;
   --link: #268bd2;
 }
 
@@ -11,7 +14,7 @@ html, body {
 }
 
 body {
-  background-color: var(--base-2);
+  background-color: var(--base-3);
   color: var(--base-02);
 }
 
