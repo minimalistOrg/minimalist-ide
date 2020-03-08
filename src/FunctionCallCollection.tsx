@@ -7,6 +7,7 @@ export const FunctionCallCollection = () => {
   return (
     <div className="fcc">
       <CodeBlock />
+      <CodeBlock />
     </div>
   );
 };

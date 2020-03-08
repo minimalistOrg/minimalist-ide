@@ -7,15 +7,24 @@
 }
 
 .code-block-header {
-  background-color: var(--base-2);
   color: var(--base-03);
-  font-weight: 800;
+  background-color: var(--base-2);
+  display: flex;
   padding: 0.3em;
+}
+
+.code-block-name {
+  font-weight: 800;
+  margin-right: 0.6rem;
 }
 
 .code-block-arguments {
   font-weight: normal;
-  color: var(--base-02);
+}
+
+.code-block-close {
+  font-family: sans-serif;
+  line-height: 0.6rem;
 }
 
 .code-block-body {
