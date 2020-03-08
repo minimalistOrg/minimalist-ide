@@ -12,11 +12,11 @@ export const CodeBlock = () => {
           plus<span className="code-block-arguments">(a, b)</span>
         </div>
 
-        <div className="code-block-close">x</div>
+        <button className="code-block-close">x</button>
       </div>
 
       <div className="code-block-body">
-        a <a>+</a> b
+        a <button className="function-call">+</button> b
       </div>
     </div>
   );
