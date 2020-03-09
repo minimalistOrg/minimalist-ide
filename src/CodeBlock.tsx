@@ -1,22 +1,29 @@
-import React from 'react';
+import React from "react";
+import { TCodeBlock } from "./types/TCodeBlock";
 
 import './CodeBlock.css';
 
-export const CodeBlock = () => {
+export const CodeBlock = (
+  { name, blockArguments, ast }: TCodeBlock
+) => {
   // Add namespace
 
   return (
     <div className="code-block">
       <div className="code-block-header">
         <div className="code-block-name">
-          plus<span className="code-block-arguments">(a, b)</span>
+          {name}
+          <span className="code-block-arguments">
+            {`(${blockArguments.join(", ")})`}
+          </span>
         </div>
 
         <button className="code-block-close">x</button>
       </div>
 
       <div className="code-block-body">
-        a <button className="function-call">+</button> b
+        {ast}
+        {/* a <button className="function-call">+</button> b */}
       </div>
     </div>
   );

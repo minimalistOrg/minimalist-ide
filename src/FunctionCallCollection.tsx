@@ -1,13 +1,17 @@
-import React from 'react';
-import { CodeBlock } from './CodeBlock';
+import React from "react";
+import { CodeBlock } from "./CodeBlock";
+import { TCodeBlock } from "./types/TCodeBlock";
 
 import './FunctionCallCollection.css';
 
-export const FunctionCallCollection = () => {
+export const FunctionCallCollection = (
+  { callCollection }: { callCollection: TCodeBlock[] }
+) => {
   return (
     <div className="fcc">
-      <CodeBlock />
-      <CodeBlock />
+      {callCollection.map(codeBlock =>
+        <CodeBlock {...codeBlock} />
+      )}
     </div>
   );
 };
