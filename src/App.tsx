@@ -8,9 +8,16 @@ export const App = () => {
     callCollections: [
       [
         {
-          name: "plus",
-          blockArguments: ["a", "b"],
-          ast: "a + b",
+          name: "double",
+          blockArguments: ["a"],
+          ast: [
+            {
+              id: 3,
+              arguments: ["a", "a"],
+              name: "plus",
+              alias: []
+            }
+          ]
         }
       ]
     ]

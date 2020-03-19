@@ -6,6 +6,8 @@
   --base-3: #fdf6e3;
   --base-1: #93a1a1;
   --link: #268bd2;
+
+  --function-call: var(--link);
 }
 
 html, body {

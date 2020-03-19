@@ -1,7 +1,16 @@
 import React from "react";
-import { TCodeBlock } from "./types/TCodeBlock";
+import { TCodeBlock, TFunctionCall } from "./types/TCodeBlock";
 
 import './CodeBlock.css';
+
+const astToHtml = (ast: TFunctionCall) => {
+  return (
+    <div>
+      <button className="function-call">{ast.name}</button>
+      ({ast.arguments.join(", ")})
+    </div>
+  );
+}
 
 export const CodeBlock = (
   { name, blockArguments, ast }: TCodeBlock
@@ -22,8 +31,7 @@ export const CodeBlock = (
       </div>
 
       <div className="code-block-body">
-        {ast}
-        {/* a <button className="function-call">+</button> b */}
+        {ast.map(astToHtml)}
       </div>
     </div>
   );
