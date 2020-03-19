@@ -1,14 +1,14 @@
 .code-block {
-  background-color: var(--base-3);
-  box-shadow: 3px 3px 6px -4px var(--base-1);
+  background-color: var(--code-block-background);
+  box-shadow: 3px 3px 6px -4px var(--code-block-box-shadow);
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
   margin-right: 0.5rem;
 }
 
 .code-block-header {
-  color: var(--base-03);
-  background-color: var(--base-2);
+  color: var(--code-block-header);
+  background-color: var(--code-block-header-background);
   display: flex;
   font-size: 1rem;
   padding: 0.3em;
@@ -30,7 +30,7 @@
 }
 
 .code-block-body {
-  color: var(--base-00);
+  color: var(--code-block-body);
   padding: 0.3em;
 }
 

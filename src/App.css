@@ -7,6 +7,15 @@
   --base-1: #93a1a1;
   --link: #268bd2;
 
+  --editor-background: var(--base-3);
+  --editor-color: var(--base-02);
+
+  --code-block-background: var(--base-3);
+  --code-block-box-shadow: var(--base-1);
+  --code-block-header: var(--base-03);
+  --code-block-header-background: var(--base-2);
+  --code-block-body: var(--base-00);
+
   --function-call: var(--link);
 }
 
@@ -16,8 +25,8 @@ html, body {
 }
 
 body {
-  background-color: var(--base-3);
-  color: var(--base-02);
+  background-color: var(--editor-background);
+  color: var(--editor-color);
 }
 
 button {
