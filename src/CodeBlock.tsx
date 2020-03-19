@@ -1,5 +1,5 @@
 import React from "react";
-import { TCodeBlock, TFunctionCall } from "./types/TCodeBlock";
+import { TCodeBlock, TFunctionCall } from "./types/CodeBlockTypes";
 
 import './CodeBlock.css';
 

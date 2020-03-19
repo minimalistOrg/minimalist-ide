@@ -1,6 +1,6 @@
 import React from "react";
 import { CodeBlock } from "./CodeBlock";
-import { TCodeBlock } from "./types/TCodeBlock";
+import { TCodeBlock } from "./types/CodeBlockTypes";
 
 import './FunctionCallCollection.css';
 
