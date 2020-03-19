@@ -18,7 +18,7 @@ export const CodeBlock = (
           </span>
         </div>
 
-        <button className="code-block-close">x</button>
+        <button className="code-block-close">&times;</button>
       </div>
 
       <div className="code-block-body">
