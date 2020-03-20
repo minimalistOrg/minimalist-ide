@@ -43,3 +43,7 @@
 .function-call:hover {
   text-decoration: underline;
 }
+
+.function-call.std-library {
+  color: var(--std-library);
+}

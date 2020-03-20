@@ -15,7 +15,21 @@ export const App = () => {
               id: 3,
               arguments: ["a", "a"],
               name: "plus",
-              alias: []
+              alias: [],
+              type: "std-library" as const
+            }
+          ]
+        },
+        {
+          name: "double",
+          blockArguments: ["a"],
+          ast: [
+            {
+              id: 3,
+              arguments: ["a", "a"],
+              name: "plus",
+              alias: [],
+              type: "user-function" as const
             }
           ]
         }
@@ -25,8 +39,8 @@ export const App = () => {
 
   return (
     <div className="App">
-      {editorState.callCollections.map(callCollection =>
-        <FunctionCallCollection callCollection={callCollection} />
+      {editorState.callCollections.map((callCollection, index) =>
+        <FunctionCallCollection callCollection={callCollection} key={index} />
       )}
     </div>
   );

@@ -9,8 +9,8 @@ export const FunctionCallCollection = (
 ) => {
   return (
     <div className="fcc">
-      {callCollection.map(codeBlock =>
-        <CodeBlock {...codeBlock} />
+      {callCollection.map((codeBlock, index) =>
+        <CodeBlock {...codeBlock} key={index} />
       )}
     </div>
   );

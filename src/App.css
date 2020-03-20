@@ -5,7 +5,8 @@
   --base-2: #eee8d5;
   --base-3: #fdf6e3;
   --base-1: #93a1a1;
-  --link: #268bd2;
+  --blue: #268bd2;
+  --cyan: #2aa198;
 
   --editor-background: var(--base-3);
   --editor-color: var(--base-02);
@@ -16,5 +17,6 @@
   --code-block-header-background: var(--base-2);
   --code-block-body: var(--base-00);
 
-  --function-call: var(--link);
+  --function-call: var(--blue);
+  --std-library: var(--cyan)
 }
