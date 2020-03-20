@@ -16,12 +16,7 @@
 }
 
 .code-block-name {
-  font-weight: 800;
   margin-right: 0.6rem;
-}
-
-.code-block-arguments {
-  font-weight: normal;
 }
 
 .code-block-close {
