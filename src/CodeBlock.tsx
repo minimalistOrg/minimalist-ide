@@ -1,15 +1,25 @@
 import React from "react";
-import { TCodeBlock, TFunctionCall } from "./types/CodeBlockTypes";
+import { TCodeBlock, TCodeStatement } from "./types/CodeBlockTypes";
 
 import './CodeBlock.css';
 
-const astToHtml = (ast: TFunctionCall) => {
-  return (
-    <div key={ast.id}>
-      <button className={`function-call ${ast.type}`}>{ast.name}</button>
-      ({ast.arguments.join(", ")})
-    </div>
-  );
+const astToHtml = (ast: TCodeStatement) => {
+  if(ast.type === "constant") {
+    return (
+      <div key={ast.id} className="constant">
+        <div className="constant-name">{ast.name}</div>
+        <div className="constant-equal-sign">=</div>
+        <div className="constant-value">{ast.value}</div>
+      </div>
+    )
+  } else if(ast.type === "std-library") {
+    return (
+      <div key={ast.id}>
+        <button className={`function-call ${ast.type}`}>{ast.name}</button>
+        ({ast.arguments.join(", ")})
+      </div>
+    );
+  }
 }
 
 export const CodeBlock = (

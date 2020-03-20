@@ -7,6 +7,8 @@
   --base-1: #93a1a1;
   --blue: #268bd2;
   --cyan: #2aa198;
+  --magenta: #d33682;
+  --violet: #6c71c4;
 
   --editor-background: var(--base-3);
   --editor-color: var(--base-02);
@@ -18,5 +20,9 @@
   --code-block-body: var(--base-00);
 
   --function-call: var(--blue);
-  --std-library: var(--cyan)
+  --std-library: var(--cyan);
+
+  --constant-name: var(--violet);
+  --constant-equal-sign: var(--base-1);
+  --constant-value: var(--magenta);
 }

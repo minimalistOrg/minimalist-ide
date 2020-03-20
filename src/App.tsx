@@ -12,24 +12,10 @@ export const App = () => {
           blockArguments: ["a"],
           ast: [
             {
-              id: 3,
-              arguments: ["a", "a"],
-              name: "plus",
-              alias: [],
-              type: "std-library" as const
-            }
-          ]
-        },
-        {
-          name: "double",
-          blockArguments: ["a"],
-          ast: [
-            {
-              id: 3,
-              arguments: ["a", "a"],
-              name: "plus",
-              alias: [],
-              type: "user-function" as const
+              id: "one",
+              name: "one",
+              value: 1,
+              type: "constant" as const
             }
           ]
         }
