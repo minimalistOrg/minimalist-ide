@@ -9,7 +9,12 @@ const astToHtml = (ast: TCodeStatement) => {
       <div key={ast.id} className="constant">
         <div className="constant-name">{ast.name}</div>
         <div className="constant-equal-sign">=</div>
-        <div className="constant-value">{ast.value}</div>
+        <div
+          className="constant-value"
+          style={{ "--contant-value-color": `var(--constant-value-${typeof ast.value}`}}
+        >
+          {ast.value}
+        </div>
       </div>
     )
   } else if(ast.type === "std-library") {

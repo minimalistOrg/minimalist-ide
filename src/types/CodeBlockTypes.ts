@@ -1,17 +1,19 @@
-type FunctionCallType = "std-library" | "user-function"
+type TFunctionCallType = "std-library" | "user-function"
 
 export interface TFunctionCall {
   id: number;
   arguments: any[];
   name: string;
   alias: string[];
-  type: FunctionCallType
+  type: TFunctionCallType
 }
+
+type TConstantValue = number | string | boolean;
 
 export interface TConstant {
   id: string;
   name: string;
-  value: any;
+  value: TConstantValue;
   type: "constant";
 }
 
