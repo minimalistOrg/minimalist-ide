@@ -48,17 +48,17 @@
   color: var(--std-library);
 }
 
-.constant {
+.constant-assignment {
   display: flex;
 }
 
-.constant-name {
+.constant-assignment-name {
   color: var(--constant-name);
   font-weight: bold;
   margin-right: 0.2rem;
 }
 
-.constant-equal-sign {
+.constant-assignment-equal-sign {
   color: var(--constant-equal-sign);
   margin-right: 0.2rem;
 }
