@@ -19,6 +19,34 @@ export const App = () => {
             }
           ]
         }
+      ],
+      [
+        {
+          name: "double",
+          blockArguments: ["a"],
+          ast: [
+            {
+              id: "one",
+              name: "one",
+              value: false,
+              type: "constant" as const
+            }
+          ]
+        }
+      ],
+      [
+        {
+          name: "double",
+          blockArguments: ["a"],
+          ast: [
+            {
+              id: "one",
+              name: "one",
+              value: "string",
+              type: "constant" as const
+            }
+          ]
+        }
       ]
     ]
   });

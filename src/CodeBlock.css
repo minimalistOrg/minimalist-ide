@@ -64,5 +64,5 @@
 }
 
 .constant-value {
-  color: var(--constant-value);
+  color: var(--constant-color-value);
 }

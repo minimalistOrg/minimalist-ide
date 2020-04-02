@@ -7,8 +7,10 @@
   --base-1: #93a1a1;
   --blue: #268bd2;
   --cyan: #2aa198;
+  --green: #859900;
   --magenta: #d33682;
   --violet: #6c71c4;
+  --yellow: #b58900;
 
   --editor-background: var(--base-3);
   --editor-color: var(--base-02);
@@ -24,5 +26,9 @@
 
   --constant-name: var(--violet);
   --constant-equal-sign: var(--base-1);
-  --constant-value: var(--magenta);
+
+  --constant-color-value: var(--magenta);
+  --constant-color-boolean: var(--yellow);
+  --constant-color-number: var(--magenta);
+  --constant-color-string: var(--green);
 }
