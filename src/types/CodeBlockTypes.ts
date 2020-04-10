@@ -20,7 +20,7 @@ export interface TFunctionCall {
   alias: string[];
 }
 
-export interface TIfStatement {
+export interface TConditional {
   type: "conditional"
   condition: TCodeStatement;
   trueBlock: TCodeStatement[];
@@ -30,7 +30,7 @@ export interface TIfStatement {
 export type TCodeStatement = TConstant
   | TConstantAssignment
   | TFunctionCall
-  | TIfStatement;
+  | TConditional;
 
 export interface TCodeBlock {
   name: string;
