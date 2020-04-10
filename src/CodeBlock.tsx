@@ -1,19 +1,21 @@
 import React from "react";
-import { TCodeBlock, TCodeStatement, TConstant } from "./types/CodeBlockTypes";
+import { TCodeBlock, TCodeStatement } from "./types/CodeBlockTypes";
+import { ConstantBlock } from "./blockComponents/ConstantBlock";
 
 import './CodeBlock.css';
 
 const astToHtml = (ast: TCodeStatement, index: number) => {
   if(ast.type === "constant") {
-
-    return constantToHtml(ast, index);
+    return (
+      <ConstantBlock ast={ast} index={index} key={index} />
+    )
   } else if(ast.type === "constant-assignment") {
 
     return (
       <div key={ast.id} className="constant-assignment">
         <div className="constant-assignment-name">{ast.name}</div>
         <div className="constant-assignment-equal-sign">=</div>
-        {constantToHtml(ast.value, index)}
+        <ConstantBlock ast={ast.value} index={index} />
       </div>
     );
   } else if(ast.type === "conditional") {
@@ -32,7 +34,7 @@ const astToHtml = (ast: TCodeStatement, index: number) => {
           <div className="condition">
             {
               conditional.condition.type === "constant" &&
-              constantToHtml(conditional.condition, index)
+              <ConstantBlock ast={conditional.condition} index={index} />
             }
           </div>
 
@@ -82,29 +84,6 @@ const astToHtml = (ast: TCodeStatement, index: number) => {
       </div>
     );
   }
-}
-
-const constantToHtml = (constant: TConstant, index: number) => {
-  const constantType = typeof constant.value;
-  let constantValue = constant.value.toString();
-
-  const style = {
-    "--constant-color-value": `var(--constant-color-${constantType})`
-  } as React.CSSProperties;
-
-  if(constantType === "string") {
-    constantValue = `"${constantValue}"`;
-  }
-
-  return (
-    <div
-      className={`constant-value constant-value-${constantType}`}
-      key={index}
-      style={style}
-    >
-      {constantValue}
-    </div>
-  );
 }
 
 export const CodeBlock = (

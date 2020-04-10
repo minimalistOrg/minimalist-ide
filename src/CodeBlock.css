@@ -52,25 +52,6 @@
   color: var(--keyword-color);
 }
 
-.constant-assignment {
-  display: flex;
-}
-
-.constant-assignment-name {
-  color: var(--constant-name);
-  font-weight: bold;
-  margin-right: 0.2rem;
-}
-
-.constant-assignment-equal-sign {
-  color: var(--constant-equal-sign);
-  margin-right: 0.2rem;
-}
-
-.constant-value {
-  color: var(--constant-color-value);
-}
-
 .nested {
   margin-left: 1em;
 }
