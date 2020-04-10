@@ -12,13 +12,23 @@ export const App = () => {
           blockArguments: ["a"],
           ast: [
             {
-              type: "constant-assignment" as const,
-              id: "one",
-              name: "one",
-              value: {
+              type: "conditional" as const,
+              condition: {
                 type: "constant" as const,
-                value: 3
-              }
+                value: false,
+              },
+              trueBlock: [
+                {
+                  type: "constant" as const,
+                  value: 3
+                }
+              ],
+              falseBlock: [
+                {
+                  type: "constant" as const,
+                  value: 5
+                }
+              ],
             }
           ]
         }

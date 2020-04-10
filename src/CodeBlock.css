@@ -37,7 +37,7 @@
 }
 
 .function-call, .function-call:active {
-  color: var(--function-call);
+  color: var(--function-call-color);
 }
 
 .function-call:hover {
@@ -45,7 +45,11 @@
 }
 
 .function-call.std-library {
-  color: var(--std-library);
+  color: var(--std-library-color);
+}
+
+.keyword {
+  color: var(--keyword-color);
 }
 
 .constant-assignment {
@@ -65,4 +69,39 @@
 
 .constant-value {
   color: var(--constant-color-value);
+}
+
+.nested {
+  margin-left: 1em;
+}
+
+.condition-block,
+.condition-start,
+.condition-end,
+.false-block-start {
+  display: flex;
+}
+
+.condition-end .parenthesis-closing,
+.false-block-start .bracket-closing,
+.false-block-start .keyword {
+  margin-right: 0.25em;
+}
+
+.multiline-block {
+  display: block;
+}
+
+.multiline-block .condition {
+  margin-left: 1em;
+}
+
+.oneline-block,
+.oneline-block .false-block {
+  display: flex;
+}
+
+.oneline-block .nested {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }

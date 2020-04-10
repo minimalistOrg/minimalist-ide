@@ -20,9 +20,17 @@ export interface TFunctionCall {
   alias: string[];
 }
 
+export interface TIfStatement {
+  type: "conditional"
+  condition: TCodeStatement;
+  trueBlock: TCodeStatement[];
+  falseBlock?: TCodeStatement[];
+}
+
 export type TCodeStatement = TConstant
   | TConstantAssignment
-  | TFunctionCall;
+  | TFunctionCall
+  | TIfStatement;
 
 export interface TCodeBlock {
   name: string;
