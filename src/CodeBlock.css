@@ -56,29 +56,11 @@
   margin-left: 1em;
 }
 
-.condition-block,
-.condition-start,
-.condition-end,
-.false-block-start {
-  display: flex;
-}
-
-.condition-end .parenthesis-closing,
-.false-block-start .bracket-closing,
-.false-block-start .keyword {
-  margin-right: 0.25em;
-}
-
 .multiline-block {
   display: block;
 }
 
-.multiline-block .condition {
-  margin-left: 1em;
-}
-
-.oneline-block,
-.oneline-block .false-block {
+.oneline-block {
   display: flex;
 }
 

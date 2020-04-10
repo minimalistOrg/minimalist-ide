@@ -1,0 +1,20 @@
+.condition-block,
+.condition-start,
+.condition-end,
+.false-block-start {
+  display: flex;
+}
+
+.condition-end .parenthesis-closing,
+.false-block-start .bracket-closing,
+.false-block-start .keyword {
+  margin-right: 0.25em;
+}
+
+.multiline-block .condition {
+  margin-left: 1em;
+}
+
+.oneline-block .false-block {
+  display: flex;
+}
