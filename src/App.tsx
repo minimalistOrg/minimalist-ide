@@ -25,7 +25,7 @@ export const App = () => {
                   value: {
                     type: "std-library" as const,
                     id: 4,
-                    arguments: [
+                    callArguments: [
                       {
                         type: "constant" as const,
                         value: "a"
@@ -57,10 +57,10 @@ export const App = () => {
           ast: [
             {
               id: 3,
-              arguments: [
+              callArguments: [
                 {
                   id: 4,
-                  arguments: [
+                  callArguments: [
                     {
                       type: "constant" as const,
                       value: "a"

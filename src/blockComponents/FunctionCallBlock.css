@@ -1,0 +1,17 @@
+.function-call {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.function-call, .function-call:active {
+  color: var(--function-call-color);
+}
+
+.function-call:hover {
+  text-decoration: underline;
+}
+
+.function-call.std-library {
+  color: var(--std-library-color);
+}

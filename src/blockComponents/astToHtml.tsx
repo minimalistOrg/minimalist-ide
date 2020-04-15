@@ -4,7 +4,8 @@ import { TCodeStatement } from "../types/CodeBlockTypes";
 import {
   ConditionalBlock,
   ConstantAssignmentBlock,
-  ConstantBlock
+  ConstantBlock,
+  FunctionCallBlock
 } from ".";
 
 export const astToHtml = (ast: TCodeStatement, index: number) => {
@@ -38,10 +39,11 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
 
   } else if(ast.type === "std-library") {
     return (
-      <div key={ast.id}>
-        <button className={`function-call ${ast.type}`}>{ast.name}</button>
-        ({ast.arguments.map(astToHtml)})
-      </div>
+      <FunctionCallBlock
+        ast={ast}
+        index={index}
+        astToHtml={astToHtml}
+      />
     );
 
   }
