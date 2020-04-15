@@ -16,7 +16,11 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
   } else if(ast.type === "constant-assignment") {
 
     return (
-      <ConstantAssignmentBlock ast={ast} index={index} />
+      <ConstantAssignmentBlock
+        ast={ast}
+        index={index}
+        astToHtml={astToHtml}
+      />
     );
   } else if(ast.type === "conditional") {
 

@@ -9,7 +9,7 @@ export interface TConstantAssignment {
   type: "constant-assignment";
   id: string;
   name: string;
-  value: TConstant;
+  value: TConstant | TFunctionCall;
 }
 
 export interface TFunctionCall {

@@ -1,15 +1,16 @@
 import React from "react";
-import { TConstantAssignment } from "../types/CodeBlockTypes";
-import { ConstantBlock } from ".";
+import { TConstantAssignment, TAstToHtml } from "../types/CodeBlockTypes";
 
 export const ConstantAssignmentBlock = (
   {
     ast: { id, name, value },
-    index
+    index,
+    astToHtml
   }:
   {
     ast: TConstantAssignment,
-    index: number
+    index: number,
+    astToHtml: TAstToHtml
   }
 ) => {
   return (
@@ -17,7 +18,7 @@ export const ConstantAssignmentBlock = (
       <div className="constant-assignment-name">{name}</div>
       <div className="constant-assignment-equal-sign">=</div>
 
-      <ConstantBlock ast={value} index={index} />
+      {astToHtml(value, index)}
     </div>
   );
 }
