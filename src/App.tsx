@@ -88,7 +88,10 @@ export const App = () => {
   return (
     <div className="App">
       {editorState.callCollections.map((callCollection, index) =>
-        <FunctionCallCollection callCollection={callCollection} key={index} />
+        <FunctionCallCollection
+          callCollection={callCollection}
+          key={index}
+        />
       )}
     </div>
   );
