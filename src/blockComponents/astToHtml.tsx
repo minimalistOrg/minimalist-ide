@@ -18,7 +18,12 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
     );
   } else if(ast.type === "conditional") {
     return (
-      <ConditionalBlock ast={ast} index={index} key={index} />
+      <ConditionalBlock
+        ast={ast}
+        index={index}
+        key={index}
+        astToHtml={astToHtml}
+      />
     );
   } else if(ast.type === "std-library") {
     return (

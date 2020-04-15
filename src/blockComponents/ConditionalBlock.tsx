@@ -1,6 +1,5 @@
 import React from "react";
-import { TConditional } from "../types/CodeBlockTypes";
-import { astToHtml } from "./astToHtml";
+import { TConditional, TAstToHtml } from "../types/CodeBlockTypes";
 import { ConstantBlock } from "./ConstantBlock";
 
 import './ConditionalBlock.css';
@@ -8,11 +7,13 @@ import './ConditionalBlock.css';
 export const ConditionalBlock = (
   {
     ast: { condition, trueBlock, falseBlock },
-    index
+    index,
+    astToHtml
   }:
   {
     ast: TConditional,
-    index: number
+    index: number,
+    astToHtml: TAstToHtml
   }
 ) => {
   return (

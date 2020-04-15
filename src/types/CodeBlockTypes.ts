@@ -37,3 +37,8 @@ export interface TCodeBlock {
   blockArguments: string[];
   ast: TCodeStatement[];
 }
+
+export type TAstToHtml = (
+  ast: TCodeStatement,
+  index: number
+) => JSX.Element | undefined
