@@ -15,7 +15,7 @@ export interface TConstantAssignment {
 export interface TFunctionCall {
   type: FunctionCallType
   id: number;
-  arguments: any[];
+  arguments: TCodeStatement[];
   name: string;
   alias: string[];
 }

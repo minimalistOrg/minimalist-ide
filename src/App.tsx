@@ -8,27 +8,28 @@ export const App = () => {
     callCollections: [
       [
         {
-          name: "double",
+          name: "test",
           blockArguments: ["a"],
           ast: [
             {
-              type: "conditional" as const,
-              condition: {
-                type: "constant" as const,
-                value: false,
-              },
-              trueBlock: [
+              id: 3,
+              arguments: [
                 {
-                  type: "constant" as const,
-                  value: 3
+                  id: 4,
+                  arguments: [
+                    {
+                      type: "constant" as const,
+                      value: "a"
+                    }
+                  ],
+                  name: "plus",
+                  alias: [],
+                  type: "std-library" as const
                 }
               ],
-              falseBlock: [
-                {
-                  type: "constant" as const,
-                  value: 5
-                }
-              ],
+              name: "plus",
+              alias: [],
+              type: "std-library" as const
             }
           ]
         }

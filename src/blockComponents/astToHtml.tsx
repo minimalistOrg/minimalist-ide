@@ -29,7 +29,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
     return (
       <div key={ast.id}>
         <button className={`function-call ${ast.type}`}>{ast.name}</button>
-        ({ast.arguments.join(", ")})
+        ({ast.arguments.map(astToHtml)})
       </div>
     );
   }
