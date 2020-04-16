@@ -12,6 +12,8 @@
   --violet: #6c71c4;
   --yellow: #b58900;
 
+  /* Colors */
+
   --editor-background: var(--base-3);
   --editor-color: var(--base-02);
 
@@ -32,4 +34,9 @@
   --constant-color-boolean: var(--yellow);
   --constant-color-number: var(--magenta);
   --constant-color-string: var(--cyan);
+
+
+  /* Spacing */
+
+  --same-line-spacing: 0.25em;
 }

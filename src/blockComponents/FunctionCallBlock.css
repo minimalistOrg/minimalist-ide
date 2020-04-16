@@ -1,17 +1,28 @@
-.function-call {
+.function-call,
+.function-call-arguments,
+.function-call-argument {
+  display: flex;
+}
+
+.function-call-name {
   font-size: inherit;
   font-family: inherit;
   font-weight: bold;
 }
 
-.function-call, .function-call:active {
+.function-call-name,
+.function-call-name:active {
   color: var(--function-call-color);
 }
 
-.function-call:hover {
+.function-call-name:hover {
   text-decoration: underline;
 }
 
-.function-call.std-library {
+.function-call-name.std-library {
   color: var(--std-library-color);
+}
+
+.function-call-argument-comma {
+  margin-right: var(--same-line-spacing)
 }
