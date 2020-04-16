@@ -6,10 +6,10 @@
 .constant-assignment-name {
   color: var(--constant-name);
   font-weight: bold;
-  margin-right: 0.2rem;
+  margin-right: var(--same-line-spacing);
 }
 
 .constant-assignment-equal-sign {
   color: var(--constant-equal-sign);
-  margin-right: 0.2rem;
+  margin-right: var(--same-line-spacing);
 }

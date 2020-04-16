@@ -35,7 +35,7 @@
 }
 
 .nested {
-  margin-left: 1em;
+  margin-left: var(--nested-spacing);
 }
 
 .multiline-block {
@@ -47,6 +47,6 @@
 }
 
 .oneline-block .nested {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  margin-left: var(--same-line-spacing);
+  margin-right: var(--same-line-spacing);
 }
