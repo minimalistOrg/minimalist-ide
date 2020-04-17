@@ -16,13 +16,13 @@ export const ConstantAssignmentBlock = (
   }
 ) => {
   return (
-    <div key={id} className="constant-assignment">
-      <div className="constant-assignment-start">
+    <div key={id} className="statement-block constant-assignment">
+      <div className="statement-start">
         <div className="constant-assignment-name">{name}</div>
         <div className="constant-assignment-equal-sign">=</div>
       </div>
 
-      <div className="constant-assignment-value">
+      <div className="statement-body constant-assignment-value">
         {astToHtml(value, index)}
       </div>
     </div>
