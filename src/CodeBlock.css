@@ -12,6 +12,7 @@
   background-color: var(--code-block-header-background);
   display: flex;
   font-size: 1rem;
+  justify-content: space-between;
   padding: 0.3em;
 }
 
