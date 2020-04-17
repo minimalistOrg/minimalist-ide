@@ -44,8 +44,10 @@ export const ConditionalBlock = (
         </div>
       </div>
 
-      <div className="true-block-body nested">
-        {trueBlock.map(astToHtml)}
+      <div className="statement-block-nested">
+        <div className="statement-body">
+          {trueBlock.map(astToHtml)}
+        </div>
       </div>
 
       { falseBlock &&
