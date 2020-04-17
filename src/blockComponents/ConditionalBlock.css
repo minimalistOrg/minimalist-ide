@@ -1,20 +1,5 @@
-.condition-block,
-.condition-start,
-.condition-end,
-.false-block-start {
-  display: flex;
-}
-
 .condition-end .parenthesis-closing,
 .false-block-start .bracket-closing,
 .false-block-start .keyword {
   margin-right: var(--same-line-spacing);
-}
-
-.multiline-block .condition {
-  margin-left: var(--nested-spacing);
-}
-
-.oneline-block .false-block {
-  display: flex;
 }

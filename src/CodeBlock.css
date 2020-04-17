@@ -58,3 +58,11 @@
 .statement-end {
   display: flex;
 }
+
+.statement-block-nested {
+  display: block;
+}
+
+.statement-block-nested .statement-body {
+  margin-left: var(--nested-spacing);
+}

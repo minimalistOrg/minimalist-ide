@@ -18,22 +18,23 @@ export const ConditionalBlock = (
 ) => {
   return (
     <div key={index} className="conditional">
-      <div className="condition-block">
-        <div className="condition-start">
+      <div className="statement-block condition-block">
+        <div className="statement-start">
           <div className="keyword">if</div>
+
           <div className="conditional-parenthesis parenthesis parenthesis-opening">
             (
           </div>
         </div>
 
-        <div className="condition">
+        <div className="statement-body">
           {
             condition.type === "constant" &&
             <ConstantBlock ast={condition} index={index} />
           }
         </div>
 
-        <div className="condition-end">
+        <div className="statement-end condition-end">
           <div className="conditional-parenthesis parenthesis parenthesis-closing">
             )
           </div>
@@ -48,8 +49,8 @@ export const ConditionalBlock = (
       </div>
 
       { falseBlock &&
-        <div className="false-block">
-          <div className="false-block-start">
+        <div className="statement-block-nested false-block">
+          <div className="statement-start false-block-start">
             <div className="conditional-bracket bracket bracket-closing">
               {"}"}
             </div>
@@ -59,13 +60,13 @@ export const ConditionalBlock = (
             </div>
           </div>
 
-          <div className="false-block-body nested">
+          <div className="statement-body">
             {falseBlock.map(astToHtml)}
           </div>
         </div>
       }
 
-      <div className="conditional-else-bracket bracket bracket-closing">
+      <div className="statement-end bracket bracket-closing">
         {"}"}
       </div>
     </div>
