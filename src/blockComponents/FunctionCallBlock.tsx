@@ -18,20 +18,22 @@ export const FunctionCallBlock = (
   const numberOfArguments = callArguments.length;
 
   return (
-    <div className="function-call" key={`${id}-${index}`}>
-      <button className={`function-call-name ${type}`}>
-        {name}
-      </button>
+    <div className="statement-block function-call" key={`${id}-${index}`}>
+      <div className="statement-start">
+        <button className={`function-call-name ${type}`}>
+          {name}
+        </button>
 
-      <div className="function-call-arguments">
         <div className="function-call-parenthesis parenthesis parenthesis-opening">
           (
         </div>
+      </div>
 
+      <div className="statement-body">
         {callArguments.map((callArgument, argumentIndex) => {
           return (
             <div
-              className="function-call-argument"
+              className="statement-block"
               key={argumentIndex}
             >
               {astToHtml(callArgument, argumentIndex)}
@@ -44,7 +46,9 @@ export const FunctionCallBlock = (
             </div>
           );
         })}
+      </div>
 
+      <div className="statement-end">
         <div className="function-call-parenthesis parenthesis parenthesis-closing">
           )
         </div>

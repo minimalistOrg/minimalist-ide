@@ -51,3 +51,10 @@
   margin-left: var(--same-line-spacing);
   margin-right: var(--same-line-spacing);
 }
+
+.statement-block,
+.statement-start,
+.statement-body,
+.statement-end {
+  display: flex;
+}

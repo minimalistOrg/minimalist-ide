@@ -1,9 +1,3 @@
-.function-call,
-.function-call-arguments,
-.function-call-argument {
-  display: flex;
-}
-
 .function-call-name {
   font-size: inherit;
   font-family: inherit;
