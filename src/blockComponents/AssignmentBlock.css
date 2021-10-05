@@ -1,0 +1,10 @@
+.assignment-name {
+  color: var(--assignment-name);
+  font-weight: bold;
+  margin-right: var(--same-line-spacing);
+}
+
+.assignment-equal-sign {
+  color: var(--assignment-equal-sign);
+  margin-right: var(--same-line-spacing);
+}

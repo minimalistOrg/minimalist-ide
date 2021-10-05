@@ -1,7 +1,7 @@
 import React from "react";
 import { TConstantAssignment, TAstToHtml } from "../types/CodeBlockTypes";
 
-import './ConstantAssignmentBlock.css';
+import './AssignmentBlock.css';
 
 export const ConstantAssignmentBlock = (
   {
@@ -18,11 +18,11 @@ export const ConstantAssignmentBlock = (
   return (
     <div key={id} className="statement-block constant-assignment">
       <div className="statement-start">
-        <div className="constant-assignment-name">{name}</div>
-        <div className="constant-assignment-equal-sign">=</div>
+        <div className="assignment-name">{name}</div>
+        <div className="assignment-equal-sign">=</div>
       </div>
 
-      <div className="statement-body constant-assignment-value">
+      <div className="statement-body assignment-value">
         {astToHtml(value, index)}
       </div>
     </div>
