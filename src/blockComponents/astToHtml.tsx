@@ -6,6 +6,7 @@ import {
   ConstantAssignmentBlock,
   ConstantBlock,
   FunctionCallBlock,
+  ListBlock,
   VariableAssignmentBlock
 } from ".";
 
@@ -37,6 +38,16 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
         astToHtml={astToHtml}
       />
     );
+
+  } else if(ast.type === "list") {
+    return (
+      <ListBlock
+        ast={ast}
+        index={index}
+        key={index}
+        astToHtml={astToHtml}
+      />
+    )
 
   } else if(ast.type === "std-library") {
     return (
