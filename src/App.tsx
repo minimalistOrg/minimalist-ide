@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FunctionCallCollection } from "./FunctionCallCollection";
+import { FunctionCallRow } from "./FunctionCallRow";
 
 import './App.css';
 
@@ -88,7 +88,7 @@ export const App = () => {
   return (
     <div className="App">
       {editorState.callCollections.map((callCollection, index) =>
-        <FunctionCallCollection
+        <FunctionCallRow
           callCollection={callCollection}
           key={index}
         />

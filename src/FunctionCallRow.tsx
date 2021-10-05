@@ -2,9 +2,9 @@ import React from "react";
 import { CodeBlock } from "./CodeBlock";
 import { TCodeBlock } from "./types/CodeBlockTypes";
 
-import './FunctionCallCollection.css';
+import './FunctionCallRow.css';
 
-export const FunctionCallCollection = (
+export const FunctionCallRow = (
   { callCollection }: { callCollection: TCodeBlock[] }
 ) => {
   return (
