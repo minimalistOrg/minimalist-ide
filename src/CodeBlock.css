@@ -35,19 +35,6 @@
   color: var(--keyword-color);
 }
 
-.multiline-block {
-  display: block;
-}
-
-.oneline-block {
-  display: flex;
-}
-
-.oneline-block .nested {
-  margin-left: var(--same-line-spacing);
-  margin-right: var(--same-line-spacing);
-}
-
 .statement-block,
 .statement-start,
 .statement-body,
