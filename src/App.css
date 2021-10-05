@@ -30,10 +30,10 @@
   --assignment-name: var(--violet);
   --assignment-equal-sign: var(--base-1);
 
-  --assignment-color-value: var(--magenta);
-  --assignment-color-boolean: var(--yellow);
-  --assignment-color-number: var(--magenta);
-  --assignment-color-string: var(--cyan);
+  --constant-color-value: var(--magenta);
+  --constant-color-boolean: var(--yellow);
+  --constant-color-number: var(--magenta);
+  --constant-color-string: var(--cyan);
 
 
   /* Spacing */
