@@ -8,7 +8,24 @@ export const App = () => {
     callRows: [
       [
         {
-          name: "double",
+          name: "gameLoop",
+          blockArguments: ["a"],
+          ast: [
+            {
+              type: "variable-assignment" as const,
+              id: "turn",
+              name: "turn",
+              value: {
+                type: "constant" as const,
+                value: 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          name: "conditional",
           blockArguments: ["a"],
           ast: [
             {
@@ -52,7 +69,7 @@ export const App = () => {
       ],
       [
         {
-          name: "test",
+          name: "nested",
           blockArguments: ["a"],
           ast: [
             {

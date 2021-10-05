@@ -27,10 +27,18 @@ export interface TConditional {
   falseBlock?: TCodeStatement[];
 }
 
+export interface TVariableAssignment {
+  type: "variable-assignment";
+  id: string;
+  name: string;
+  value: TConstant | TFunctionCall;
+}
+
 export type TCodeStatement = TConstant
   | TConstantAssignment
   | TFunctionCall
-  | TConditional;
+  | TConditional
+  | TVariableAssignment;
 
 export interface TCodeBlock {
   name: string;
