@@ -5,7 +5,7 @@ import './App.css';
 
 export const App = () => {
   const [editorState] = useState({
-    callCollections: [
+    callRows: [
       [
         {
           name: "double",
@@ -87,9 +87,9 @@ export const App = () => {
 
   return (
     <div className="App">
-      {editorState.callCollections.map((callCollection, index) =>
+      {editorState.callRows.map((callRow, index) =>
         <FunctionCallRow
-          callCollection={callCollection}
+          callCollection={callRow}
           key={index}
         />
       )}
