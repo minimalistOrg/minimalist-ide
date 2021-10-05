@@ -5,11 +5,14 @@ export interface TConstant {
   value: any;
 }
 
+export type TRightHandSide = TConstant
+  | TFunctionCall
+
 export interface TConstantAssignment {
   type: "constant-assignment";
   id: string;
   name: string;
-  value: TConstant | TFunctionCall;
+  value: TRightHandSide;
 }
 
 export interface TFunctionCall {
@@ -31,7 +34,7 @@ export interface TVariableAssignment {
   type: "variable-assignment";
   id: string;
   name: string;
-  value: TConstant | TFunctionCall;
+  value: TRightHandSide;
 }
 
 export type TCodeStatement = TConstant
