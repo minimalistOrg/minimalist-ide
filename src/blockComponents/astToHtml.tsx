@@ -5,7 +5,8 @@ import {
   ConditionalBlock,
   ConstantAssignmentBlock,
   ConstantBlock,
-  FunctionCallBlock
+  FunctionCallBlock,
+  VariableAssignmentBlock
 } from ".";
 
 export const astToHtml = (ast: TCodeStatement, index: number) => {
@@ -40,6 +41,15 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
   } else if(ast.type === "std-library") {
     return (
       <FunctionCallBlock
+        ast={ast}
+        index={index}
+        astToHtml={astToHtml}
+      />
+    );
+
+  } else if(ast.type === "variable-assignment") {
+    return (
+      <VariableAssignmentBlock
         ast={ast}
         index={index}
         astToHtml={astToHtml}
