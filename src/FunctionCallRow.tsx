@@ -8,7 +8,7 @@ export const FunctionCallRow = (
   { callCollection }: { callCollection: TCodeBlock[] }
 ) => {
   return (
-    <div className="fcc">
+    <div className="fcr">
       {callCollection.map((codeBlock, index) =>
         <CodeBlock {...codeBlock} key={index} />
       )}
