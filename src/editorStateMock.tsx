@@ -74,6 +74,15 @@ export const editorStateMock = {
                 }
               ]
             }
+          },
+          {
+            type: "variable-assignment" as const,
+            id: "gameEnded?",
+            name: "gameEnded?",
+            value: {
+              type: "constant" as const,
+              value: false
+            }
           }
         ]
       }
