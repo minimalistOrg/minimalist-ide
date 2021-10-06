@@ -3,6 +3,7 @@ import { FunctionCallRow } from "./FunctionCallRow";
 import { editorStateMock } from "./editorStateMock";
 
 import './App.css';
+import './styles/helpers.css';
 
 export const App = () => {
   const [editorState] = useState(editorStateMock);

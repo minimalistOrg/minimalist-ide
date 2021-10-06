@@ -1,5 +1,3 @@
-.condition-end .parenthesis-closing,
-.false-block-start .bracket-closing,
-.false-block-start .keyword {
+.false-block-start .bracket-closing {
   margin-right: var(--same-line-spacing);
 }

@@ -35,7 +35,7 @@ export const ConditionalBlock = (
         </div>
 
         <div className="statement-end condition-end">
-          <div className="conditional-parenthesis parenthesis parenthesis-closing">
+          <div className="conditional-parenthesis parenthesis parenthesis-closing mr">
             )
           </div>
           <div className="conditional-bracket bracket bracket-opening">
@@ -56,7 +56,7 @@ export const ConditionalBlock = (
             <div className="conditional-bracket bracket bracket-closing">
               {"}"}
             </div>
-            <div className="keyword">else</div>
+            <div className="keyword mr">else</div>
             <div className="conditional-else-bracket bracket bracket-opening">
               {"{"}
             </div>

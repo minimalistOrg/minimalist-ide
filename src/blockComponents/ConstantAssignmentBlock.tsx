@@ -18,8 +18,8 @@ export const ConstantAssignmentBlock = (
   return (
     <div key={id} className="statement-block constant-assignment">
       <div className="statement-start">
-        <div className="keyword keyword-const">const</div>
-        <div className="assignment-name">{name}</div>
+        <div className="keyword keyword-const mr">const</div>
+        <div className="assignment-name mr">{name}</div>
         <div className="assignment-equal-sign">=</div>
       </div>
 

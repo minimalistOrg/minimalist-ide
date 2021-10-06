@@ -2,7 +2,6 @@ import React from "react";
 import { TVariableAssignment, TAstToHtml } from "../types/CodeBlockTypes";
 
 import './AssignmentBlock.css';
-import './VariableAssignmentBlock.css';
 
 export const VariableAssignmentBlock = (
   {
@@ -19,8 +18,8 @@ export const VariableAssignmentBlock = (
   return (
     <div key={id} className="statement-block variable-assignment">
       <div className="statement-start">
-        <div className="keyword keyword-let">let</div>
-        <div className="assignment-name">{name}</div>
+        <div className="keyword keyword-let mr">let</div>
+        <div className="assignment-name mr">{name}</div>
         <div className="assignment-equal-sign">=</div>
       </div>
 
