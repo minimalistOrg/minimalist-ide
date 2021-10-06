@@ -13,6 +13,28 @@ export const fakeCallRows = {
               type: "constant" as const,
               value: 0
             }
+          },
+          {
+            type: "variable-assignment" as const,
+            id: "board",
+            name: "board",
+            value: {
+              type: "list" as const,
+              value: [
+                {
+                  type: "constant" as const,
+                  value: 0
+                },
+                {
+                  type: "constant" as const,
+                  value: 0
+                },
+                {
+                  type: "constant" as const,
+                  value: 0
+                }
+              ]
+            }
           }
         ]
       }

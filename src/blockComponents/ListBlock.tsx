@@ -13,6 +13,8 @@ export const ListBlock = (
     astToHtml: TAstToHtml
   }
 ) => {
+  const numberOfElements = value.length;
+
   return (
     <div className="statement-block" key={index}>
       <div className="statement-start list-opening">
@@ -21,7 +23,20 @@ export const ListBlock = (
 
       <div className="statement-body">
         {value.map((element: TRightHandSide, elementIndex: number) => {
-            return astToHtml(element, elementIndex)
+            return (
+              <div
+                className="statement-block"
+                key={elementIndex}
+              >
+                {astToHtml(element, elementIndex)}
+
+                {(elementIndex + 1) < numberOfElements &&
+                  <div className="comma">
+                    ,
+                  </div>
+                }
+              </div>
+            )
         })}
       </div>
 
