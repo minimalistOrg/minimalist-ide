@@ -1,4 +1,4 @@
-export const fakeCallRows = {
+export const editorStateMock = {
   functionRows: [
     [
       {

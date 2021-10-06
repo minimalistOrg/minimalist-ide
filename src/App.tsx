@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FunctionCallRow } from "./FunctionCallRow";
-import { fakeCallRows } from "./fakeCallRows";
+import { editorStateMock } from "./editorStateMock";
 
 import './App.css';
 
 export const App = () => {
-  const [editorState] = useState(fakeCallRows);
+  const [editorState] = useState(editorStateMock);
 
   return (
     <div className="App">
