@@ -39,7 +39,7 @@ export const FunctionCallBlock = (
               {astToHtml(callArgument, argumentIndex)}
 
               {(argumentIndex + 1) < numberOfArguments &&
-                <div className="function-call-argument-comma">
+                <div className="comma">
                   ,
                 </div>
               }

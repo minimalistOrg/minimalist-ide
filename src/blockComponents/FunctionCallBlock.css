@@ -16,7 +16,3 @@
 .function-call-name.std-library {
   color: var(--std-library-color);
 }
-
-.function-call-argument-comma {
-  margin-right: var(--same-line-spacing)
-}
