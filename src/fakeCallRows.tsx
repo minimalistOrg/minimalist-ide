@@ -22,16 +22,55 @@ export const fakeCallRows = {
               type: "list" as const,
               value: [
                 {
-                  type: "constant" as const,
-                  value: 0
+                  type: "list" as const,
+                  value: [
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    }
+                  ]
                 },
                 {
-                  type: "constant" as const,
-                  value: 0
+                  type: "list" as const,
+                  value: [
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    }
+                  ]
                 },
                 {
-                  type: "constant" as const,
-                  value: 0
+                  type: "list" as const,
+                  value: [
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    },
+                    {
+                      type: "constant" as const,
+                      value: 0
+                    }
+                  ]
                 }
               ]
             }
