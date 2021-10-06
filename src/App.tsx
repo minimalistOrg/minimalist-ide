@@ -9,9 +9,9 @@ export const App = () => {
 
   return (
     <div className="App">
-      {editorState.callRows.map((callRow, index) =>
+      {editorState.functionRows.map((functionRow, index) =>
         <FunctionCallRow
-          callCollection={callRow}
+          functionRow={functionRow}
           key={index}
         />
       )}

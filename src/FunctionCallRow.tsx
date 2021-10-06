@@ -5,11 +5,11 @@ import { TCodeBlock } from "./types/CodeBlockTypes";
 import './FunctionCallRow.css';
 
 export const FunctionCallRow = (
-  { callCollection }: { callCollection: TCodeBlock[] }
+  { functionRow }: { functionRow: TCodeBlock[] }
 ) => {
   return (
     <div className="fcr">
-      {callCollection.map((codeBlock, index) =>
+      {functionRow.map((codeBlock, index) =>
         <CodeBlock {...codeBlock} key={index} />
       )}
     </div>

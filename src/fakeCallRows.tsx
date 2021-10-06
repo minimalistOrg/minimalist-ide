@@ -1,5 +1,5 @@
 export const fakeCallRows = {
-  callRows: [
+  functionRows: [
     [
       {
         name: "gameLoop",
