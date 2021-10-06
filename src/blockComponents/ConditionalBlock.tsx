@@ -2,8 +2,6 @@ import React from "react";
 import { TConditional, TAstToHtml } from "../types/CodeBlockTypes";
 import { ConstantBlock } from "./ConstantBlock";
 
-import './ConditionalBlock.css';
-
 export const ConditionalBlock = (
   {
     ast: { condition, trueBlock, falseBlock },
@@ -53,7 +51,9 @@ export const ConditionalBlock = (
       { falseBlock &&
         <div className="statement-block-nested false-block">
           <div className="statement-start false-block-start">
-            <div className="conditional-bracket bracket bracket-closing">
+            <div
+              className="conditional-bracket bracket bracket-closing mr-if-not-nested"
+            >
               {"}"}
             </div>
             <div className="keyword mr">else</div>

@@ -31,7 +31,7 @@ export const ListBlock = (
                 {astToHtml(element, elementIndex)}
 
                 {(elementIndex + 1) < numberOfElements &&
-                  <div className="comma">
+                <div className="comma mr-if-not-nested">
                     ,
                   </div>
                 }

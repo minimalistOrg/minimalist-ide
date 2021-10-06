@@ -39,7 +39,7 @@ export const FunctionCallBlock = (
               {astToHtml(callArgument, argumentIndex)}
 
               {(argumentIndex + 1) < numberOfArguments &&
-                <div className="comma">
+                <div className="comma mr-if-not-nested">
                   ,
                 </div>
               }

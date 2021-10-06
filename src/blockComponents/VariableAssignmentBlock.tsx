@@ -20,7 +20,7 @@ export const VariableAssignmentBlock = (
       <div className="statement-start">
         <div className="keyword keyword-let mr">let</div>
         <div className="assignment-name mr">{name}</div>
-        <div className="assignment-equal-sign">=</div>
+        <div className="assignment-equal-sign mr-if-not-nested">=</div>
       </div>
 
       <div className="statement-body assignment-value">

@@ -1,3 +1,7 @@
 .mr {
   margin-right: var(--same-line-spacing);
 }
+
+.mr-if-not-nested {
+  margin-right: var(--same-line-spacing);
+}

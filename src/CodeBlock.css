@@ -35,10 +35,6 @@
   color: var(--keyword-color);
 }
 
-.comma {
-  margin-right: var(--same-line-spacing)
-}
-
 .statement-block,
 .statement-start,
 .statement-body,
