@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FunctionCallRow } from "./FunctionCallRow";
-import { editorStateMock } from "./editorStateMock";
+import { editorStateMock } from "./mocks/editorStateMock";
 
 import './App.css';
 import './styles/helpers.css';
