@@ -105,11 +105,11 @@ export const libraryMock = {
               functionArguments: [
                 {
                   type: "constant" as const,
-                  value: "a"
+                  value: 1
                 },
                 {
                   type: "constant" as const,
-                  value: "a"
+                  value: 5
                 }
               ],
               name: "plus",
@@ -138,16 +138,20 @@ export const libraryMock = {
             functionArguments: [
               {
                 type: "constant" as const,
-                value: "a"
+                value: 1
               },
               {
                 type: "constant" as const,
-                value: "a"
+                value: 2
               }
             ],
             name: "plus",
             alias: [],
             type: "std-library" as const
+          },
+          {
+            type: "constant" as const,
+            value: 3
           }
         ],
         name: "plus",
