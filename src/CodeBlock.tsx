@@ -5,7 +5,7 @@ import { astToHtml } from "./blockComponents";
 import './CodeBlock.css';
 
 export const CodeBlock = (
-  { name, blockArguments, ast }: TCodeBlock
+  { name, blockParameters, ast }: TCodeBlock
 ) => {
   // Add namespace
 
@@ -15,7 +15,7 @@ export const CodeBlock = (
         <div className="code-block-name">
           {name}
           <span className="code-block-arguments">
-            {`(${blockArguments.join(", ")})`}
+            {`(${blockParameters.join(", ")})`}
           </span>
         </div>
 

@@ -1,7 +1,7 @@
 export const libraryMock = {
   "1": {
     name: "gameLoop",
-    blockArguments: ["a"],
+    blockParameters: ["a"],
     ast: [
       {
         type: "variable-assignment" as const,
@@ -86,7 +86,7 @@ export const libraryMock = {
   },
   "2": {
     name: "conditional",
-    blockArguments: ["a"],
+    blockParameters: ["a"],
     ast: [
       {
         type: "conditional" as const,
@@ -128,7 +128,7 @@ export const libraryMock = {
   },
   "3": {
     name: "nested",
-    blockArguments: ["a"],
+    blockParameters: ["a"],
     ast: [
       {
         id: 101,

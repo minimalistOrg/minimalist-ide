@@ -50,7 +50,7 @@ export type TCodeStatement = TRightHandSide
 
 export interface TCodeBlock {
   name: string;
-  blockArguments: string[];
+  blockParameters: string[];
   ast: TCodeStatement[];
 }
 
