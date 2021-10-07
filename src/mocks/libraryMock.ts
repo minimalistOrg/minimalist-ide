@@ -102,7 +102,7 @@ export const libraryMock = {
             value: {
               type: "std-library" as const,
               id: 101,
-              callArguments: [
+              functionArguments: [
                 {
                   type: "constant" as const,
                   value: "a"
@@ -132,10 +132,10 @@ export const libraryMock = {
     ast: [
       {
         id: 101,
-        callArguments: [
+        functionArguments: [
           {
             id: 101,
-            callArguments: [
+            functionArguments: [
               {
                 type: "constant" as const,
                 value: "a"

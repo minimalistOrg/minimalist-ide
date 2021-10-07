@@ -5,7 +5,7 @@ import './FunctionCallBlock.css';
 
 export const FunctionCallBlock = (
   {
-    ast: { id, callArguments, name, type },
+    ast: { id, functionArguments, name, type },
     index,
     astToHtml
   }:
@@ -15,7 +15,7 @@ export const FunctionCallBlock = (
     astToHtml: TAstToHtml
   }
 ) => {
-  const numberOfArguments = callArguments.length;
+  const numberOfArguments = functionArguments.length;
 
   return (
     <div className="statement-block function-call" key={`${id}-${index}`}>
@@ -30,7 +30,7 @@ export const FunctionCallBlock = (
       </div>
 
       <div className="statement-body">
-        {callArguments.map((callArgument, argumentIndex) => {
+        {functionArguments.map((callArgument, argumentIndex) => {
           return (
             <div
               className="statement-block"
