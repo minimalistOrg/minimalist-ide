@@ -3,7 +3,7 @@ import { TConstantAssignment, TAstToHtml } from "../types/CodeBlockTypes";
 
 import './AssignmentBlock.css';
 
-export const ConstantAssignmentBlock = (
+export const AssignmentBlock = (
   {
     ast: { id, name, value },
     index,

@@ -1,6 +1,6 @@
 export { astToHtml } from "./astToHtml";
+export { AssignmentBlock } from "./AssignmentBlock";
 export { ConditionalBlock } from "./ConditionalBlock";
-export { ConstantAssignmentBlock } from "./ConstantAssignmentBlock";
 export { ConstantBlock } from "./ConstantBlock";
 export { FunctionCallBlock } from "./FunctionCallBlock";
 export { ListBlock } from "./ListBlock";

@@ -2,8 +2,8 @@ import React from "react";
 
 import { TCodeStatement } from "../types/CodeBlockTypes";
 import {
+  AssignmentBlock,
   ConditionalBlock,
-  ConstantAssignmentBlock,
   ConstantBlock,
   FunctionCallBlock,
   ListBlock,
@@ -22,7 +22,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
 
   } else if(ast.type === "constant-assignment") {
     return (
-      <ConstantAssignmentBlock
+      <AssignmentBlock
         ast={ast}
         index={index}
         key={index}
