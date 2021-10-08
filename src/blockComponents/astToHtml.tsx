@@ -25,6 +25,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
       <ConstantAssignmentBlock
         ast={ast}
         index={index}
+        key={index}
         astToHtml={astToHtml}
       />
     );
@@ -54,6 +55,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
       <FunctionCallBlock
         ast={ast}
         index={index}
+        key={index}
         astToHtml={astToHtml}
       />
     );
@@ -63,6 +65,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
       <VariableAssignmentBlock
         ast={ast}
         index={index}
+        key={index}
         astToHtml={astToHtml}
       />
     );
