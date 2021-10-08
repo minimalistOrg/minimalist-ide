@@ -26,6 +26,7 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
         ast={ast}
         index={index}
         key={index}
+        keyword="const"
         astToHtml={astToHtml}
       />
     );
