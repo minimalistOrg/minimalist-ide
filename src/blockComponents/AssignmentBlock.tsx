@@ -1,5 +1,5 @@
 import React from "react";
-import { TConstantAssignment, TAstToHtml } from "../types/CodeBlockTypes";
+import { TConstantAssignment, TAstToHtml, TVariableAssignment } from "../types/CodeBlockTypes";
 
 import './AssignmentBlock.css';
 
@@ -11,7 +11,7 @@ export const AssignmentBlock = (
     astToHtml
   }:
   {
-    ast: TConstantAssignment,
+    ast: TConstantAssignment | TVariableAssignment,
     index: number,
     keyword: string,
     astToHtml: TAstToHtml
