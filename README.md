@@ -1,3 +1,5 @@
+> Freedom from Tyranny of the files!
+
 # Minimalist IDE
 
 A web-based code viewer inspired by [Code Bubbles](https://www.youtube.com/watch?v=PsPX0nElJ0k).
