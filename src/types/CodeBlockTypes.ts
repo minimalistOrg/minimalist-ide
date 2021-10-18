@@ -1,4 +1,4 @@
-type FunctionCallType = "std-library" | "user-function"
+type FunctionCallType = "std-library" | "package" | "user-function"
 
 export interface TConstant {
   type: "constant";
