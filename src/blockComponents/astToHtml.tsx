@@ -50,7 +50,10 @@ export const astToHtml = (ast: TCodeStatement, index: number) => {
       />
     )
 
-  } else if(ast.type === "std-library") {
+  } else if(
+    ast.type === "std-library"
+    || ast.type === "package"
+  ) {
     return (
       <FunctionCallBlock
         ast={ast}
